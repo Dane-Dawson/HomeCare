@@ -1,6 +1,6 @@
 # HomeCare
 
-Concept -> Customizable tracker for home ownership and recommended routine maintenence
+Concept -> Customizable tracker for home ownership and recommended routine maintenence and (separate?) cleaning recommendations
 
 ---House details that may be worth tracking for reminders---
 
@@ -65,6 +65,7 @@ Concept -> Customizable tracker for home ownership and recommended routine maint
 
 
 <h1>resources</h1>
-<li> https://i.etsystatic.com/7642030/r/il/e8caea/644303566/il_1588xN.644303566_q0pk.jpg<br>- cleaning focused internally, supplies list<br>
-<li>https://prudentreviews.com/wp-content/uploads/2018/07/Home-Maintenance-Checklist-Printable-PDF-1.jpg<br>- Season based largely external maintenence<br>
-<li>https://static.wixstatic.com/media/a65436_ac7a86acff6247c4a30ac58b1c6a0107~mv2_d_2504_5728_s_4_2.jpg/v1/fill/w_1000,h_2288,al_c,q_90,usm_0.66_1.00_0.01/a65436_ac7a86acff6247c4a30ac58b1c6a0107~mv2_d_2504_5728_s_4_2.jpg<br>- Home inspection recommended monthly checklist
+<li> <a href="https://i.etsystatic.com/7642030/r/il/e8caea/644303566/il_1588xN.644303566_q0pk.jpg">Cleaning focused internally, supplies list</a>
+<li><a href="https://prudentreviews.com/wp-content/uploads/2018/07/Home-Maintenance-Checklist-Printable-PDF-1.jpg">Season based largely external maintenence</a>
+<li><a href="https://www.championinspect.com/post/2018/01/03/annual-homeowners-maintenance-checklist">Checklist</a> - Home inspection recommended monthly checklist and it's <a href="https://docs.wixstatic.com/ugd/a65436_6e4d79e504444ceb942c90013a7431fb.pdf">PDF file</a>
+<li><a href="https://www.yumpu.com/en/document/read/58709724/mvpaspencom-home-maintenance-checklist">HVP Home Specialist checklist</a>

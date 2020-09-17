@@ -1,0 +1,7 @@
+Account/house (assuming each user has 1 house)
+-Email
+-address(?)
+-Username(?)
+
+Room (minimize total model variety count by having a room class with subclasses?)
+
