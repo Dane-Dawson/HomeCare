@@ -5,3 +5,6 @@ Account/house (assuming each user has 1 house)
 
 Room (minimize total model variety count by having a room class with subclasses?)
 
+Utility/appliance (accessories inside the rooms or outside)
+
+Specs (additional information not confined to an item)
