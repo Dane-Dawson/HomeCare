@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  feature: one
+  upkeep: one
+  last_done_date: 2020-12-16
+
+two:
+  feature: two
+  upkeep: two
+  last_done_date: 2020-12-16

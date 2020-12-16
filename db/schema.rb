@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_13_040922) do
+ActiveRecord::Schema.define(version: 2020_12_16_160004) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,4 +22,47 @@ ActiveRecord::Schema.define(version: 2020_12_13_040922) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "features", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "upkeeps", force: :cascade do |t|
+    t.string "task"
+    t.string "task_internal"
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "user_area_features", force: :cascade do |t|
+    t.bigint "user_area_id", null: false
+    t.bigint "feature_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["feature_id"], name: "index_user_area_features_on_feature_id"
+    t.index ["user_area_id"], name: "index_user_area_features_on_user_area_id"
+  end
+
+  create_table "user_areas", force: :cascade do |t|
+    t.bigint "area_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["area_id"], name: "index_user_areas_on_area_id"
+    t.index ["user_id"], name: "index_user_areas_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "user_area_features", "features"
+  add_foreign_key "user_area_features", "user_areas"
+  add_foreign_key "user_areas", "areas"
+  add_foreign_key "user_areas", "users"
 end

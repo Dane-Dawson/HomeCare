@@ -1,0 +1,2 @@
+class Upkeep < ApplicationRecord
+end
