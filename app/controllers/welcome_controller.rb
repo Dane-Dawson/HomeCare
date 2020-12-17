@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    render json: Time.now
+    render json: {users: User.all, areas: Area.all, features: Feature.all}
   end
 end
