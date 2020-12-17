@@ -1,5 +1,5 @@
 class AreasController < ApplicationController
     def index
-        render json: Area.all
+        render Area.all
     end
 end
