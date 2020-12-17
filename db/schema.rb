@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_16_160004) do
+ActiveRecord::Schema.define(version: 2020_12_16_161450) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(version: 2020_12_16_160004) do
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "feature_upkeeps", force: :cascade do |t|
+    t.bigint "feature_id", null: false
+    t.bigint "upkeep_id", null: false
+    t.date "last_done_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["feature_id"], name: "index_feature_upkeeps_on_feature_id"
+    t.index ["upkeep_id"], name: "index_feature_upkeeps_on_upkeep_id"
   end
 
   create_table "features", force: :cascade do |t|
@@ -61,6 +71,8 @@ ActiveRecord::Schema.define(version: 2020_12_16_160004) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "feature_upkeeps", "features"
+  add_foreign_key "feature_upkeeps", "upkeeps"
   add_foreign_key "user_area_features", "features"
   add_foreign_key "user_area_features", "user_areas"
   add_foreign_key "user_areas", "areas"
